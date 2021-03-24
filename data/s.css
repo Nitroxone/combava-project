@@ -198,7 +198,7 @@ nav li {
 }
 
 .title {
-    width:calc(100% / 1.5);
+    width:1200px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -239,7 +239,7 @@ nav li {
 }
 
 .lemonade {
-    width:calc(100% / 1.5);
+    width:1000px;
     display:flex;
     justify-content:center;
     align-items:center;
