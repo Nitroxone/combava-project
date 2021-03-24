@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------- END OF RESETTING --------------- */
+
+@font-face {
+    font-family:'CaveatRegular';
+    
+    src: url('fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
+    
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family:'CaveatBold';
+    
+    src: url('fonts/Caveat/static/Caveat-Bold.ttf') format('truetype');
+    
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family:'LexendBold';
+    
+    src: url('fonts/Lexend/Lexend-Bold.ttf') format('truetype');
+    
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: 'LexendRegular';
+    src: url('fonts/Lexend/Lexend-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LexendLight';
+    src: url('fonts/Lexend/Lexend-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LexendThin';
+    src: url('fonts/Lexend/Lexend-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+#banner {
+    height:400px;
+    background-image:url('img/front.jpg');
+    background-size:contain;
+    background-position:45% 50%;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    width:calc(100%);
+    position:relative;
+}
+
+/*#banner h1 {
+    color:black;
+    font-family:'CaveatBold';
+    position:absolute;
+    top:calc(100% / 2.8);
+    right:calc(100% / 4.8);
+    font-size:3em;
+}
+
+#banner h2 {
+    color:#5f6368;
+    font-family:'OpenSansBold';
+    position:absolute;
+    top:calc(100% / 2.1);
+    right:calc(100% / 4.8);
+    font-weight:lighter;
+    text-transform:uppercase;
+}*/
+
+#bannertexts {
+    position:absolute;
+    top:calc(100% / 2.8);
+    right:calc(100% / 4.8);
+}
+
+#bannertexts h1 {
+    color:black;
+    font-family:'CaveatBold';
+    font-size:3em;
+    animation-name:landing;
+    animation-duration:1s;
+    animation-delay:0s;
+    animation-iteration-count:1;
+}
+
+@keyframes landing {
+    0%      {opacity:0;}
+    100%    {opacity:1;}
+}
+
+@keyframes landing-sub {
+    0%      {opacity:0;}
+    75%     {opacity:0;}
+    100%    {opacity:1;}
+}
+
+#bannertexts h2 {
+    color:#5f6368;
+    font-family:'LexendRegular';
+    font-weight:lighter;
+    text-transform:uppercase;
+    margin:0.2rem 0rem 0rem 0.5rem;
+    animation-name:landing-sub;
+    animation-duration:1.5s;
+    animation-delay:0s;
+    animation-iteration-count:1;
+}
+
+nav {
+    background: #fbe92b;
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-end;
+    box-shadow: 5px 8px black;
+}
+
+nav a {
+    color:inherit;
+}
+
+nav a:hover {
+    color: #fefefe;
+    text-decoration:none;
+}
+
+nav ul {
+    display:flex;
+    flex-direction:row;
+    width:calc(100% / 4.5);
+    justify-content:space-around;
+}
+
+nav li {
+    font-family:'LexendRegular';
+}
+
+#presentation {
+    background-image:url('img/bg.png');
+    background-repeat:repeat;
+    padding:2rem;
+    display:flex;
+    justify-content:center;
+}
+
+.title {
+    width:calc(100% / 1.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.title-subdesc h1 {
+    font-size: 3em;
+    font-family: 'LexendBold';
+    color: #ffffff;
+    text-align: right;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+}
+
+.title-subdesc p {
+    word-wrap:break-word;
+    font-family:'LexendRegular';
+    text-align:right;
+}
+
+.title img {
+    width: 550px;
+    margin-left: 1.5rem;
+    border: 8px solid white;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
+}
+
+#products {
+    background:#ffffff;
+    padding:2rem;
+    display:flex;
+    justify-content:center;
+}
+
+#products img
+{
+    width:550px;
+}
+
+.lemonade {
+    width:calc(100% / 1.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.lemonade-subdesc h1 {
+    align-items: flex-start;
+    font-size: 3em;
+    font-family: 'LexendBold';
+    color: #2c3e50;
+    text-align: left;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+}
+
+.lemonade-subdesc p {
+    word-wrap:break-word;
+    font-family:'LexendRegular';
+    text-align:left;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
