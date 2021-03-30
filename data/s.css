@@ -268,3 +268,48 @@ a {
 a:hover {
     text-decoration:underline;
 }
+
+#events {
+    background-image:url('img/bg.png');
+    background-repeat:repeat;
+    padding:2rem;
+    display:flex;
+    justify-content:center;
+}
+
+#events h2 
+{
+	font-family: 'LexendBold';
+	font-size:3em;
+	color:#fff;
+}
+
+.events-list {
+	width:1000px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+.event 
+{
+	background:#fff;
+	width:800px;
+	margin:0.6rem 0rem;
+	padding:1rem;
+	border-radius:3px;
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
+}
+
+.event h3 {
+	font-family: 'LexendBold';
+	font-size:1.4rem;
+	font-weight:lighter;
+	color: #2c3e50;
+}
+
+.event p {
+	font-family:'LexendRegular';
+	color:#e58e26;
+}
