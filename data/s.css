@@ -313,3 +313,83 @@ a:hover {
 	font-family:'LexendRegular';
 	color:#e58e26;
 }
+
+.spacer-white {
+	background:#fff;
+	padding:2.5rem;
+	transform:rotate(-2deg);
+}
+
+#contact {
+	background:#fff;
+	padding:2rem;
+	display:flex;
+	justify-content:center;
+	flex-direction:row;
+}
+
+.contactform {
+	width:1200px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+.contactform h2 {
+	font-family:'LexendBold';
+	font-size:2em;
+	margin:1.5em 0em;
+}
+
+.contactform img {
+	width:100px;
+}
+
+form {
+	padding:1rem;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	width:510px;
+}
+
+.checkbox-wrapper {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:row;
+}
+
+.checkbox-wrapper label {
+	font-family:'LexendRegular';
+	font-size:0.9rem;
+}
+
+input[type=text], input[type=email], textarea {
+	margin:0.4rem;
+	border:1px solid #e6e6e6;
+	background:none;
+	border-radius:3px;
+	color:#2c3e50;
+	width:100%;
+	font-size:0.9em;
+	font-family:'LexendRegular';
+	padding:0.3rem;
+}
+
+input[type=submit] {
+	width:25%;
+	margin:0.4rem;
+	background:#2c3e50;
+	border:none;
+	font-family:'LexendBold';
+	font-weight:lighter;
+	color:white;
+	text-transform:uppercase;
+	padding:0.8rem 0.4rem;
+	font-size:0.9em;
+	border-radius:3px;
+	cursor:pointer;
+}
