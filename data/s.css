@@ -148,6 +148,8 @@ table {
     animation-iteration-count:1;
 }
 
+
+
 nav {
     background: #fbe92b;
     display: flex;
@@ -293,7 +295,6 @@ a:hover {
 	align-items:center;
 	flex-direction:column;
 }
-
 .event 
 {
 	background:#fff;
@@ -400,9 +401,98 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 768px){
-    body{
-        background-color: blue;
+
+    #banner {
+        height:400px;
     }
+    
+    #bannertexts {
+        height: 400px;
+    }
+
+    #bannertexts h1 {
+        font-size:3em;
+    }
+    #bannertexts h2 {
+        font-size:1em;
+    }
+    nav {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+    nav ul {
+        width: 350px;
+    }
+    nav li {
+        display: flex;
+        align-items:unset;
+    }
+    .title {
+        width:100%;
+        flex-direction:unset;
+        align-items:center;
+    }
+    .title-subdesc h1 {
+        font-size: 3em;
+        text-align: right;
+        margin-bottom: 1rem;
+        align-items: flex-start;
+  
+    }
+    .title-subdesc p {
+        text-align:right;
+        font-size: 1em;
+    }
+    .title img {
+        width: 50%;
+        margin-left: 1.5rem;
+        margin-top: 0rem;
+    }    
+    #products img
+    {
+        width:50%;
+    }
+    .lemonade {
+        width:1000px;
+        flex-direction: unset;
+    }
+    
+    .lemonade-subdesc h1 {
+        align-items: flex-start;
+        font-size: 3em;
+        text-align: left;
+    }
+    
+    .lemonade-subdesc p {
+        text-align:left;
+        font-size: 1em;
+    }
+    #events {
+        padding:2rem;
+    }
+    #events h2 
+    {
+        font-size:3em;
+        text-align: unset;
+    }
+    .event 
+    {
+        width:100%;
+        padding:0.8rem;
+        
+    }
+    .events-list{
+        width: 80%;
+        margin: auto;
+    }
+    .event h3 {
+        font-size:1.2rem;
+    }
+    input[type=text], input[type=email], textarea {
+        width:100%;
+    }
+
+
+    
     
 }
 
