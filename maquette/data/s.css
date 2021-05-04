@@ -1,0 +1,498 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------- END OF RESETTING --------------- */
+
+@font-face {
+    font-family:'CaveatRegular';
+    
+    src: url('fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
+    
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family:'CaveatBold';
+    
+    src: url('fonts/Caveat/static/Caveat-Bold.ttf') format('truetype');
+    
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family:'LexendBold';
+    
+    src: url('fonts/Lexend/Lexend-Bold.ttf') format('truetype');
+    
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: 'LexendRegular';
+    src: url('fonts/Lexend/Lexend-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LexendLight';
+    src: url('fonts/Lexend/Lexend-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LexendThin';
+    src: url('fonts/Lexend/Lexend-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*                                    FONT                                    */
+
+#banner {
+    height:200px;
+    background-size:contain;
+    background-position:45% 50%;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    width:calc(100%);
+    position:relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+#bannertexts {
+    display : flex;
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bannertexts h1 {
+    color:black;
+   
+    font-size:1.9em;
+    animation-name:landing;
+    animation-duration:1s;
+    animation-delay:0s;
+    animation-iteration-count:1;
+}
+
+@keyframes landing {
+    0%      {opacity:0;}
+    100%    {opacity:1;}
+}
+
+@keyframes landing-sub {
+    0%      {opacity:0;}
+    75%     {opacity:0;}
+    100%    {opacity:1;}
+}
+
+#bannertexts h2 {
+    color:#5f6368;
+    font-family:'LexendRegular';
+    font-weight:lighter;
+    font-size:0.8em;
+    text-transform:uppercase;
+    margin:0.2rem 0rem 0rem 0.5rem;
+    animation-name:landing-sub;
+    animation-duration:1.5s;
+    animation-delay:0s;
+    animation-iteration-count:1;
+}
+
+
+
+nav {
+    background: #fbe92b;
+    display: flex;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    justify-content: flex-end;
+    box-shadow: 5px 8px black;
+    width:100%;
+}
+
+nav a {
+    color:inherit;
+    font-size:0.8em;
+    
+}
+
+nav a:hover {
+    color: #fefefe;
+    text-decoration:none;
+}
+
+nav ul {
+    display:flex;
+    flex-direction:row;
+    width:280px;
+    justify-content:space-around;
+}
+
+nav li {
+    display: flex;
+    font-family:'LexendRegular';
+    align-items: center;
+}
+
+#presentation {
+    background-image:url('img/bg.png');
+    background-repeat:repeat;
+    
+    padding:2rem;
+    display:flex;
+    justify-content:center;
+}
+
+.title {
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.title-subdesc h1 {
+    font-size: 2.2em;
+    font-family: 'LexendBold';
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+}
+
+.title-subdesc p {
+    word-wrap:break-word;
+    font-family:'LexendRegular';
+    text-align:center;
+    font-size: 0.9em;
+}
+
+.title img {
+    width: 350px;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: 8px solid white;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
+}
+
+
+
+#products {
+    background:#ffffff;
+    padding:2rem;
+    display:flex;
+    justify-content:center;
+    
+}
+
+#products img
+{
+    width:350px;
+}
+
+.lemonade {
+    width:80%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.lemonade-subdesc h1 {
+    align-items: center;
+    font-size: 2.2em;
+    font-family: 'LexendBold';
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+
+.lemonade-subdesc p {
+    word-wrap:break-word;
+    font-family:'LexendRegular';
+    text-align:center;
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+#events {
+    background-image:url('img/bg.png');
+    background-repeat:repeat;
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#events h2 
+{
+	font-family: 'LexendBold';
+	font-size:2.2em;
+	color:#fff;
+    text-align: center;
+}
+
+.events-list {
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+.event 
+{
+	background:#fff;
+	width:70%;
+	margin:0.6rem 0rem;
+	padding:0.8rem;
+	border-radius:3px;
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
+}
+
+.event h3 {
+	font-family: 'LexendBold';
+	font-size:1.2rem;
+	font-weight:lighter;
+	color: #2c3e50;
+}
+
+.event p {
+	font-family:'LexendRegular';
+	color:#e58e26;
+    font-size: 0.8rem;
+    padding-top: 0.3em;
+}
+
+.spacer-white {
+	background:#fff;
+	padding:2.5rem;
+	transform:rotate(-2deg);
+}
+
+#contact {
+	background:#fff;
+	padding:2rem;
+	display:flex;
+	justify-content:center;
+	flex-direction:row;
+}
+
+.contactform {
+	width:1200px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+.contactform h2 {
+	font-family:'LexendBold';
+	font-size:2em;
+	margin:1.5em 0em;
+   
+}
+
+.contactform img {
+	width:100px;
+}
+
+form {
+	padding:1rem;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	width:510px;
+}
+
+.checkbox-wrapper {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:row;
+}
+
+.checkbox-wrapper label {
+	font-family:'LexendRegular';
+	font-size:0.9rem;
+}
+
+input[type=text], input[type=email], textarea {
+	margin:0.4rem;
+	border:1px solid #e6e6e6;
+	background:none;
+	border-radius:3px;
+	color:#2c3e50;
+	width:80%;
+	font-size:0.9em;
+	font-family:'LexendRegular';
+	padding:0.3rem;
+}
+
+input[type=submit] {
+	width:25%;
+	margin:0.4rem;
+	background:#2c3e50;
+	border:none;
+	font-family:'LexendBold';
+	font-weight:lighter;
+	color:white;
+	text-transform:uppercase;
+	padding:0.8rem 0.4rem;
+	font-size:0.9em;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+@media screen and (min-width: 768px){
+
+    #banner {
+        height:400px;
+    }
+    
+    #bannertexts {
+        height: 400px;
+    }
+
+    #bannertexts h1 {
+        font-size:3em;
+    }
+    #bannertexts h2 {
+        font-size:1em;
+    }
+    nav {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+    nav ul {
+        width: 350px;
+    }
+    nav li {
+        display: flex;
+        align-items:unset;
+    }
+    .title {
+        width:100%;
+        flex-direction:unset;
+        align-items:center;
+    }
+    .title-subdesc h1 {
+        font-size: 3em;
+        text-align: right;
+        margin-bottom: 1rem;
+        align-items: flex-start;
+  
+    }
+    .title-subdesc p {
+        text-align:right;
+        font-size: 1em;
+    }
+    .title img {
+        width: 50%;
+        margin-left: 1.5rem;
+        margin-top: 0rem;
+    }    
+    #products img
+    {
+        width:50%;
+    }
+    .lemonade {
+        width:1000px;
+        flex-direction: unset;
+    }
+    
+    .lemonade-subdesc h1 {
+        align-items: flex-start;
+        font-size: 3em;
+        text-align: left;
+    }
+    
+    .lemonade-subdesc p {
+        text-align:left;
+        font-size: 1em;
+    }
+    #events {
+        padding:2rem;
+    }
+    #events h2 
+    {
+        font-size:3em;
+        text-align: unset;
+    }
+    .event 
+    {
+        width:100%;
+        padding:0.8rem;
+        
+    }
+    .events-list{
+        width: 80%;
+        margin: auto;
+    }
+    .event h3 {
+        font-size:1.2rem;
+    }
+    input[type=text], input[type=email], textarea {
+        width:100%;
+    }
+
+
+    
+    
+}
+
