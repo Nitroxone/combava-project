@@ -95,7 +95,7 @@ table {
 /*                                    FONT                                    */
 
 #banner {
-    height:200px;
+    height:27vw;
     background-size:contain;
     background-position:45% 50%;
     background-repeat:no-repeat;
@@ -109,7 +109,7 @@ table {
 
 #bannertexts {
     display : flex;
-    height: 250px;
+    height: 27vw;
     flex-direction: column;
     justify-content: center;
 }
@@ -117,7 +117,7 @@ table {
 #bannertexts h1 {
     color:black;
     font-family:'CaveatBold';
-    font-size:1.9em;
+    font-size:3.5vw;
     animation-name:landing;
     animation-duration:1s;
     animation-delay:0s;
@@ -139,9 +139,9 @@ table {
     color:#5f6368;
     font-family:'LexendRegular';
     font-weight:lighter;
-    font-size:0.8em;
+    font-size:1.1vw;
     text-transform:uppercase;
-    margin:0.2rem 0rem 0rem 0.5rem;
+    margin:0.2vw 0vw 0vw 0.5vw;
     animation-name:landing-sub;
     animation-duration:1.5s;
     animation-delay:0s;
@@ -153,7 +153,8 @@ table {
 nav {
     background: #fbe92b;
     display: flex;
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    
+    padding: 1vw 0vw 1vw 0vw;
     justify-content: flex-end;
     box-shadow: 5px 8px black;
     width:100%;
@@ -161,7 +162,7 @@ nav {
 
 nav a {
     color:inherit;
-    font-size:0.8em;
+    
     
 }
 
@@ -173,47 +174,47 @@ nav a:hover {
 nav ul {
     display:flex;
     flex-direction:row;
-    width:280px;
     justify-content:space-around;
+    width: 40vw;
 }
 
 nav li {
     display: flex;
-    font-family:'LexendRegular';
+    font-family:'CaveatBold';
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 2.1vw;
 }
 
 #presentation {
     background-image:url('img/bg.png');
     background-repeat:repeat;
-    
-    padding:2rem;
+    padding:2vw;
     display:flex;
     justify-content:center;
 }
 
 .title {
     display:flex;
-    justify-content:center;
+    align-items:center;
     flex-direction: column;
     width: 80%;
+    padding : 2vw 0vw 2vw 0vw;
 }
 
 .title h1 {
-    font-size: 2.2em;
+    font-size:3vw;
     font-family: 'LexendBold';
     color: #ffffff;
     text-align: center;
-    margin-bottom: 1.5rem;
-    
+    margin-bottom: 4vw ;  
 }
 
 .title p {
     word-wrap:break-word;
     font-family:'LexendRegular';
     text-align:center;
-    font-size: 0.9em;
+    font-size: 1.5vw;
+    width: 60vw;
 }
 
 #presentation_contain{
@@ -224,26 +225,23 @@ nav li {
 }
 
 .title img {
-    width: 350px;
+    width: 40vw;
     margin: auto;
-    margin-top: 1.5rem;
-    border: 8px solid white;
+    margin-top: 2.5vw;
+    border: 0.8vw solid white;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
 }
-
-
-
 #products {
     background:#ffffff;
-    padding:2rem;
+    padding:4vw;
     display:flex;
     justify-content:center;
-    
+    padding : 5vw 0vw 4vw 0vw;
 }
 
 #products img
 {
-    width:350px;
+    width:40vw;
 }
 
 .lemonade {
@@ -256,11 +254,11 @@ nav li {
 
 .lemonade-subdesc h1 {
     align-items: center;
-    font-size: 2.2em;
+    font-size:3vw;
     font-family: 'LexendBold';
     color: #2c3e50;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 4vw;
     
 }
 
@@ -268,7 +266,7 @@ nav li {
     word-wrap:break-word;
     font-family:'LexendRegular';
     text-align:center;
-    font-size: 0.9em;
+    font-size: 1.5vw;
 }
 
 a {
@@ -282,7 +280,7 @@ a:hover {
 #events {
     background-image:url('img/bg.png');
     background-repeat:repeat;
-    padding:2rem;
+    padding:3vw;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -291,9 +289,10 @@ a:hover {
 #events h2 
 {
 	font-family: 'LexendBold';
-	font-size:2.2em;
+	font-size:4vw;
 	color:#fff;
     text-align: center;
+    margin-bottom: 1vw;
 }
 
 .events-list {
@@ -306,16 +305,16 @@ a:hover {
 .event 
 {
 	background:#fff;
-	width:70%;
-	margin:0.6rem 0rem;
-	padding:0.8rem;
+	width:65vw;
+	margin:1.5vw 0vw;
+	padding:1.6vw;
 	border-radius:3px;
 	box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
 }
 
 .event h3 {
 	font-family: 'LexendBold';
-	font-size:1.2rem;
+	font-size:2vw;
 	font-weight:lighter;
 	color: #2c3e50;
 }
@@ -323,15 +322,10 @@ a:hover {
 .event p {
 	font-family:'LexendRegular';
 	color:#e58e26;
-    font-size: 0.8rem;
-    padding-top: 0.3em;
+    font-size: 1.2vw;
+    padding-top: 0.5vw;
 }
 
-.spacer-white {
-	background:#fff;
-	padding:2.5rem;
-	transform:rotate(-2deg);
-}
 
 #contact {
 	background:#fff;
@@ -342,7 +336,6 @@ a:hover {
 }
 
 .contactform {
-	width:1200px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -351,13 +344,13 @@ a:hover {
 
 .contactform h2 {
 	font-family:'LexendBold';
-	font-size:2em;
+	font-size:3vw;
 	margin:1.5em 0em;
    
 }
 
 .contactform img {
-	width:100px;
+	width:15vw;
 }
 
 form {
@@ -366,7 +359,7 @@ form {
 	align-items:center;
 	justify-content:center;
 	flex-direction:column;
-	width:510px;
+	width:70vw;
 }
 
 .checkbox-wrapper {
@@ -375,136 +368,92 @@ form {
 	align-items:center;
 	flex-direction:row;
 }
+.checkbox-wrapper input[type=checkbox]{
+    font-size: 2vw;
+    width: 2vw;
+    height: 1vw;
+}
 
 .checkbox-wrapper label {
 	font-family:'LexendRegular';
-	font-size:0.9rem;
+	font-size:2vw;
 }
+/* --------------- END OF RESETTING --------------- */
 
 input[type=text], input[type=email], textarea {
-	margin:0.4rem;
+	margin:0.5vw;
 	border:1px solid #e6e6e6;
 	background:none;
 	border-radius:3px;
 	color:#2c3e50;
-	width:80%;
-	font-size:0.9em;
+	width:60vw;
+	font-size:0.9vw;
 	font-family:'LexendRegular';
-	padding:0.3rem;
+	padding:0.8vw;
 }
 
 input[type=submit] {
-	width:25%;
-	margin:0.4rem;
+	width:15vw;
+	margin:0.8vw;
 	background:#2c3e50;
 	border:none;
 	font-family:'LexendBold';
 	font-weight:lighter;
 	color:white;
 	text-transform:uppercase;
-	padding:0.8rem 0.4rem;
-	font-size:0.9em;
+	padding:0.8vw 0.4vw;
+	font-size:1.3vw;
 	border-radius:3px;
 	cursor:pointer;
 }
 
-option{
-    background-color: white;
-}
 
 @media screen and (min-width: 768px){
 
-    #banner {
-        height:400px;
-    }
-    
-    #bannertexts {
-        height: 400px;
-    }
-
-    #bannertexts h1 {
-        font-size:3em;
-    }
-    #bannertexts h2 {
-        font-size:1em;
-    }
-    nav {
-        padding: 1rem 0rem 1rem 0rem;
-    }
-    nav ul {
-        width: 350px;
-    }
     nav li {
         display: flex;
         align-items:unset;
-        font-size: 1.3rem;
+        font-size: 1.8vw;
     }
     .title {
         width:85%;
         align-items:center;
+        padding: 2.5vw 0vw 1.5vw 0vw;
     }
     .title h1 {
-        font-size: 3em;
         flex-direction: none;
-        margin-bottom: 1rem;
     }
     #presentation_contain{
         flex-direction: row;
         align-items: center;
-        margin-top: 10px;
+        margin: 2.5vw 0vw 2.5vw 0vw;
     }
     #presentation_contain p {
         text-align:justify;
-        font-size: 1em;
+        font-size: 1.2vw;
+        width : 35vw;
+        padding-right: 3vw;
                 
     }
     .title img {
-        width: 50%;
-        margin-left: 1.5rem;
+        width: 30vw;
+        margin-left: 1.5vw;
         margin-top: 0rem;
     }    
-    #products img
-    {
-        width:50%;
-    }
     .lemonade {
-        width:1000px;
         flex-direction: unset;
     }
     
     .lemonade-subdesc h1 {
         align-items: flex-start;
-        font-size: 3em;
+        font-size: 3vw;
         text-align: left;
     }
     
     .lemonade-subdesc p {
         text-align:left;
-        font-size: 1em;
-    }
-    #events {
-        padding:2rem;
-    }
-    #events h2 
-    {
-        font-size:3em;
-        margin-bottom: 20px;;
-    }
-    .event 
-    {
-        width:100%;
-        padding:0.8rem;
-        
-    }
-    .events-list{
-        width: 80%;
-        margin: auto;
-    }
-    .event h3 {
-        font-size:1.2rem;
-    }
-    input[type=text], input[type=email], textarea {
-        width:100%;
-    }
+        font-size: 1.2vw;
+    } 
+    
 }
 
