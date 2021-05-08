@@ -181,6 +181,7 @@ nav li {
     display: flex;
     font-family:'LexendRegular';
     align-items: center;
+    font-size: 1.1rem;
 }
 
 #presentation {
@@ -199,7 +200,7 @@ nav li {
     width: 80%;
 }
 
-.title-subdesc h1 {
+.title h1 {
     font-size: 2.2em;
     font-family: 'LexendBold';
     color: #ffffff;
@@ -208,11 +209,18 @@ nav li {
     
 }
 
-.title-subdesc p {
+.title p {
     word-wrap:break-word;
     font-family:'LexendRegular';
     text-align:center;
     font-size: 0.9em;
+}
+
+#presentation_contain{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 .title img {
@@ -400,6 +408,10 @@ input[type=submit] {
 	cursor:pointer;
 }
 
+option{
+    background-color: white;
+}
+
 @media screen and (min-width: 768px){
 
     #banner {
@@ -425,22 +437,26 @@ input[type=submit] {
     nav li {
         display: flex;
         align-items:unset;
+        font-size: 1.3rem;
     }
     .title {
-        width:100%;
-        flex-direction:unset;
+        width:85%;
         align-items:center;
     }
-    .title-subdesc h1 {
+    .title h1 {
         font-size: 3em;
-        text-align: right;
+        flex-direction: none;
         margin-bottom: 1rem;
-        align-items: flex-start;
-  
     }
-    .title-subdesc p {
-        text-align:right;
+    #presentation_contain{
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #presentation_contain p {
+        text-align:justify;
         font-size: 1em;
+                
     }
     .title img {
         width: 50%;
@@ -472,7 +488,7 @@ input[type=submit] {
     #events h2 
     {
         font-size:3em;
-        text-align: unset;
+        margin-bottom: 20px;;
     }
     .event 
     {
@@ -490,9 +506,5 @@ input[type=submit] {
     input[type=text], input[type=email], textarea {
         width:100%;
     }
-
-
-    
-    
 }
 

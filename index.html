@@ -4,6 +4,7 @@
         <title>Combava's Fresh Lemonades</title>
         <link rel="stylesheet" href="data/s.css" />
         <meta charset="utf-8" />
+	
     </head>
     
     <body>
@@ -18,29 +19,33 @@
         
         <nav>
             <ul>
-                <li><a href="#banner">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="#presentation">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">About us</a></li>
             </ul>
         </nav>
 
         <div id="main">
             <section id="presentation">
                 <div class="title">
-                    <div class="title-subdesc">
-                        <h1>
-                            We are a group of
-                            <br />
-                            passionate producers
-                        </h1>
-                        <p>
-                            From Nice through Côte d'Azur and all the way to Corsica, our passion for citrus cultivation gave us the opportunity to work together.
-                            <br /><br />
-                            We value the quality of our fruits and drinks more than anything else. Every product that is brought to you was hand picked with love and care.
-                        </p>
-                    </div>
-                    <img src="data/img/mm-yumy-froots.jpg" alt="Citrus leaves" />
+					<h1>
+						We are a group of
+						passionate producers
+					</h1>
+
+                    <div id="presentation_contain">
+						<p>
+							The <a href="//www.combava.com/">Combava association</a> seeks to take up the torch of the company "David's Lemonade" so famous in the USA!
+							<br /> <br />
+							So from Nice through Côte d'Azur and all the way to Corsica, our passion for citrus cultivation gave us the opportunity to work together for continue the legend of "David's Lemonade".
+							<br /><br />
+							We value the quality of our fruits and drinks more than anything else. Every product that is brought to you was hand picked with love and care.
+						</p>
+				
+                    	<img src="data/img/mm-yumy-froots.jpg" alt="Citrus leaves" />
+					</div>    
+					
                 </div>
             </section>
             <section id="products">
@@ -140,7 +145,24 @@
 						<br />
 						<input type="text" id="phnumber" name="phnumber" placeholder="Phone number" />
 						<br />
-						<input type="text" id="event" name="event" placeholder="Event name" />
+						<input type="text" id="event" name="event" placeholder="Event" list="browsers"/>
+						<datalist id="browsers">
+							<option> AMAP les Grand'Goules </option>
+							<option> AMAP Bio des 2 rive </option>
+							<option> AMAP des Voiliers </option>
+							<option> Le Pompin'Ambour </option>
+							<option> AMAP Bio'Rillac </option>
+							<option> AMAP </option>
+							<option> Pensées Bio </option>
+							<option> Bio & Sens Montpellier — Juvignac </option>
+							<option> Biosseta </option>
+							<option> La Canopée </option>
+							<option> Naturéo </option>
+							<option> Rayons Verts </option>
+							<option> BIOMONDE </option>
+							<option> Bio C'Bon </option>
+							<option> Les Comptoirs de la Bio </option>
+						 </datalist>
 						<br />
 						<div class="checkbox-wrapper">
 							<input type="checkbox" id="newsletter" name="newsletter">
