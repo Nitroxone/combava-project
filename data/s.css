@@ -233,7 +233,6 @@ nav li {
 }
 #products {
     background:#ffffff;
-    padding:4vw;
     display:flex;
     justify-content:center;
     padding : 5vw 0vw 4vw 0vw;
@@ -480,6 +479,12 @@ footer div p {
     }    
     .lemonade {
         flex-direction: unset;
+        padding : 0vw;
+    }
+
+    #products {
+        padding : 0vw 0vw 2vw 0vw;
+        
     }
     .event{
         width: 60vw;
