@@ -481,6 +481,18 @@ footer div p {
     .lemonade {
         flex-direction: unset;
     }
+    .event{
+        width: 60vw;
+        padding:1.2vw;
+    }
+    .event h3 {
+        font-size:1.6vw;
+    }
+    
+    .event p {
+        font-size: 1.1vw;
+    }
+
     
     .lemonade-subdesc h1 {
         align-items: flex-start;
