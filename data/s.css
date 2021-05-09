@@ -378,7 +378,6 @@ form {
 	font-family:'LexendRegular';
 	font-size:2vw;
 }
-/* --------------- END OF RESETTING --------------- */
 
 input[type=text], input[type=email], textarea {
 	margin:0.5vw;
@@ -405,6 +404,45 @@ input[type=submit] {
 	font-size:1.3vw;
 	border-radius:3px;
 	cursor:pointer;
+}
+footer{
+    background-image:url('img/bg.png');
+    display : flex;
+    flex-direction: column;
+    padding : 2.5vw 10vw 2.5vw 10vw;
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+footer>div p{
+    margin-left: 1.5vw;
+    font-size: 2.5vw;
+}
+footer img{
+    width: 2.2vw;
+}
+footer section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; align-items: center;
+}
+footer section div p{
+    margin-left: 1.5vw;
+    font-size: 2.5vw;
+}
+footer div p a:link{
+    text-decoration: none;
+}
+footer div p {
+    text-decoration: black;
 }
 
 
@@ -454,6 +492,32 @@ input[type=submit] {
         text-align:left;
         font-size: 1.2vw;
     } 
+    footer{
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer>div{
+        margin-top: 0px;
+        margin-left: 10vw;
+
+    }
+    footer section{
+        justify-content: space-around;
+        
+    }
+    footer #instagram{
+        margin-right: 10vw;
+    }
+    footer section div p{
+        font-size: 1.5vw;
+    }
+    footer div p{
+        font-size: 1.5vw;
+    }
+    footer div img{
+        width: 1.5vw;
+    }
+
     
 }
 
