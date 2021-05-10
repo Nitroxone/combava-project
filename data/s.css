@@ -463,9 +463,6 @@ footer div p a {
         align-items:center;
         padding: 2.5vw 0vw 1.5vw 0vw;
     }
-    .title h1 {
-        flex-direction: none;
-    }
     #presentation_contain{
         flex-direction: row;
         align-items: center;
